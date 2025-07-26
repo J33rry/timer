@@ -55,8 +55,7 @@ function Flipper({ unit }) {
             </div>
             {/* divider */}
             <div className="absolute top-1/2 h-[1px] bg-mostly_black left-0 right-0 z-10"></div>
-            {/* <div className="absolute top-1/2 h-6 w-3 rounded-r-full left-0 z-10 bg-mostly_black -translate-y-1/2"></div> */}
-            {/* animated*/}
+            {/* animated */}
             <div
                 className={`absolute flex left-0 w-full h-1/2 top-0 justify-between overflow-hidden backface-hidden items-end origin-[50%_100%] rotate-x-0 bg-Desaturated_blue rounded-t-lg transform-3d ${
                     shuffle ? "animate-fold" : ""
