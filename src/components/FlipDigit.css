@@ -1,0 +1,18 @@
+.perspective {
+    perspective: 1000px;
+}
+
+.flip {
+    animation: flipDown 0.6s ease-in-out forwards;
+    transform-origin: bottom;
+}
+
+@keyframes flipDown {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+}
