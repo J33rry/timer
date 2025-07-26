@@ -16,6 +16,9 @@
     --color-heading: white;
     --color-primary: hsl(237, 18%, 59%);
     --color-secondary: hsl(345, 95%, 68%);
+    --color-third: hsl(345, 95%, 64%);
+    --animate-fold: fold 0.6s ease-in-out forwards;
+    --animate-unfold: unfold 0.6s ease-in-out forwards;
 }
 
 color {
@@ -37,4 +40,21 @@ body {
     );
     color: var(--foreground);
     font-family: var(--font-red-hat-text), Helvetica, sans-serif;
+}
+@keyframes fold {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes unfold {
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
 }

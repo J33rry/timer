@@ -8,10 +8,10 @@ function Timer() {
                 We&apos;re launching soon
             </div>
             <div className="flex gap-3 md:gap-8 lg:gap-12">
-                <Clock />
-                <Flipper unit="hour" />
-                <Flipper unit="minute" />
-                <Flipper unit="second" />
+                <Clock unit="day" />
+                <Clock unit="hour" />
+                <Clock unit="minute" />
+                <Clock unit="second" />
             </div>
         </div>
     );
